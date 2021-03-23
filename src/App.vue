@@ -1,16 +1,25 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div>
+    <h1 class="title">{{title}}</h1>
+    <MenuItem :item="item" />
+  </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import itemData from './data';  
+import MenuItem from './components/MenuItem';
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    MenuItem
   },
+  data () {
+    return {
+      title: 'My First Vue App',
+      item: itemData
+    }
+  }
 };
 </script>
 
@@ -22,5 +31,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.title {
+  padding: 10px;
+  border-bottom: 1px solid lightblue;
 }
 </style>
