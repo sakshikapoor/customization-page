@@ -1,4 +1,12 @@
-# modal-project
+# Item Customization Page
+
+## Project structure and details:
+
+- all files are inside `src` folder
+- components inside `src/component` folder
+- sample JSON inside `data.js`
+- no external libraries used
+- code is responsive and tab accessible
 
 ## Project setup
 ```
