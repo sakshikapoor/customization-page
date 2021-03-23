@@ -63,7 +63,13 @@
               v-bind:key="optionalItem.id"
               class="optional-checkbox"
             >
-              <div class="optional-img-container" @click="toggleCustomization(optionalItem.id)">
+              <div
+                class="optional-img-container"
+                role="button"
+                aria-pressed="false"
+                tabindex="0"
+                @click="toggleCustomization(optionalItem.id)"
+              >
                 <img
                   class="optional-img"
                   :src="optionalItem.image"
